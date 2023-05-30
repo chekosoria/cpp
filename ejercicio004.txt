@@ -1,0 +1,1 @@
+Ejecutar el programa del ejercicio 003 con tipos de datos diferentes a los esperados para verificar los mensajes de error.
