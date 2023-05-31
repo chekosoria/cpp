@@ -1,5 +1,5 @@
 /*
-Ejercicio 006. Escribe la siguiente expresión como expresión en C++:
+Ejercicio 002. Escribe la siguiente expresión como expresión en C++:
 
 a)  a + b 
    -------
