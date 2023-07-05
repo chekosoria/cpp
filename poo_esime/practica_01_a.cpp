@@ -1,3 +1,6 @@
+/*
+Realice un programa que por medio de una función pida 2 enteros, los sume y regrese el resultado a la llamada de la función.
+*/
 #include <iostream>
 using namespace std;
 
@@ -14,7 +17,7 @@ int main(){
 
     resultado = suma(x,y);
 
-    cout <<"\nEl resultado es: " << resultado << endl;
+    cout <<"\nEl resultado de la suma es: " << resultado << endl;
 
     return 0;
 }

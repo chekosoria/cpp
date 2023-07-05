@@ -1,3 +1,7 @@
+/*
+Realice un programa con Programación orientada a objetos en C++: 
+Que por medio de una función pida 2 enteros y los sume y regrese el resultado a la llamada de la función.
+*/
 #include <iostream>
 using namespace std;
 
@@ -8,18 +12,19 @@ private:
    	int b;
 public:
 	void suma (void){
-  	 cout << "dame el valor de a:  ";      cin >> a;
-   	cout << "dame el valor de b;  ";      cin >> b;
-  	 cout << "La suma es: " << a+b << endl;
+  	 cout << "Ingrese el valor del primer numero:  ";
+	 cin >> a;
+	 cout << "\nIngrese el valor del segundo numero:  ";
+	 cin >> b;
+  	 cout << "\nEl resultado de la suma es: " << a+b << endl;
 }
 };
-
 
 int main(){
 
 Operacion s1;
 
-
 s1.suma();
-system("pause");
+
+return 0;
 }
