@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/semma/Documents/Proyectos/cpp/ats/04_CiclosBucles",
-      "program": "c:/Users/semma/Documents/Proyectos/cpp/ats/04_CiclosBucles/build/Debug/outDebug",
+      "cwd": "c:/Users/semma/Documents/Proyectos/cpp/varios",
+      "program": "c:/Users/semma/Documents/Proyectos/cpp/varios/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
