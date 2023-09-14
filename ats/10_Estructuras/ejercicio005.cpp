@@ -30,43 +30,35 @@ struct alumno {
 };
 
 int main() {
-    int x;
 
-    cout << "Ingrese la cantidad de alumnos que desea capturar: ";
-    cin >> x;
+    alumno miAlumno;
 
-    alumno alumnos[x];
+    cout << "\nCapturando datos del alumno" << endl;
+    cout << "\nIngrese nombre: ";
+    getline(cin, miAlumno.nombre);
+    cout << "\nIngrese F para femenino o M para masculino: ";
+    cin >> miAlumno.sexo;
+    cout << "\nIngrese edad: ";
+    cin >> miAlumno.edad;
+    cout << "\nIngrese primera nota: ";
+    cin >> miAlumno.promedioAlumno.nota1;
+    cout << "\nIngrese segunda nota: ";
+    cin >> miAlumno.promedioAlumno.nota2;
+    cout << "\nIngrese tercera nota: ";
+    cin >> miAlumno.promedioAlumno.nota3;
+    miAlumno.promedioAlumno.final = (miAlumno.promedioAlumno.nota1 + miAlumno.promedioAlumno.nota2 + miAlumno.promedioAlumno.nota3) / 3;
 
-    for (int i = 0; i < x; i++) {
-        cin.ignore();
-        cout << "\nCapturando datos del alumno " << i + 1 << endl;
-        cout << "\nIngrese nombre: ";
-        getline(std::cin, alumnos[i].nombre);
-        cout << "\nIngrese F para femenino o M para masculino: ";
-        cin >> alumnos[i].sexo;
-        cout << "\nIngrese edad: ";
-        cin >> alumnos[i].edad;
-        cout << "\nIngrese primera nota: ";
-        cin >> alumnos[i].promedioAlumno.nota1;
-        cout << "\nIngrese segunda nota: ";
-        cin >> alumnos[i].promedioAlumno.nota2;
-        cout << "\nIngrese tercera nota: ";
-        cin >> alumnos[i].promedioAlumno.nota3;
-        alumnos[i].promedioAlumno.final = (alumnos[i].promedioAlumno.nota1 + alumnos[i].promedioAlumno.nota2 + alumnos[i].promedioAlumno.nota3) / 3;
-    }
 
     cout << fixed << setprecision(2);
 
-    for (int i = 0; i < x; i++) {
-        cout << "\nMostrando los datos del alumno " << i + 1 << endl;
-        cout << "\nNombre: " << alumnos[i].nombre << endl;
-        cout << "Sexo: " << alumnos[i].sexo << endl;
-        cout << "Edad: " << alumnos[i].edad << endl;
-        cout << "Primera nota: " << alumnos[i].promedioAlumno.nota1 << endl;
-        cout << "Segunda nota: " << alumnos[i].promedioAlumno.nota2 << endl;
-        cout << "Tercera nota: " << alumnos[i].promedioAlumno.nota3 << endl;
-        cout << "Promedio: " << alumnos[i].promedioAlumno.final << endl;
-    }
+        cout << "\nMostrando los datos del alumno " << endl;
+        cout << "\nNombre: " << miAlumno.nombre << endl;
+        cout << "Sexo: " << miAlumno.sexo << endl;
+        cout << "Edad: " << miAlumno.edad << endl;
+        cout << "Primera nota: " << miAlumno.promedioAlumno.nota1 << endl;
+        cout << "Segunda nota: " << miAlumno.promedioAlumno.nota2 << endl;
+        cout << "Tercera nota: " << miAlumno.promedioAlumno.nota3 << endl;
+        cout << "Promedio: " << miAlumno.promedioAlumno.final << endl;
 
     return 0;
 }
