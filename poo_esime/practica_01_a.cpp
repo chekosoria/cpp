@@ -2,26 +2,15 @@
 Realice un programa que por medio de una función pida 2 enteros, los sume y regrese el resultado a la llamada de la función.
 */
 #include <iostream>
-using namespace std;
-
-int suma(int, int);
+#include "Operaciones.h"
 
 int main(){
-    int x, y, resultado = 0;
+    int x=15;
+    int y = 20;
 
-    cout << "Ingrese el valor del primer numero: ";
-    cin >> x;
-    cout << "\nIngrese el valor del segundo numero: ";
-    cin >> y;
+    int resultado = suma(x,y);
 
-
-    resultado = suma(x,y);
-
-    cout <<"\nEl resultado de la suma es: " << resultado << endl;
+    std::cout <<"\nEl resultado de la suma es: " << resultado << std::endl;
 
     return 0;
-}
-
-int suma(int a, int b){
-    return (a+b);
 }
